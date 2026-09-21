@@ -1,8 +1,8 @@
 -- CREAR BASE DE DATOS: se crea un nuevo contenedor físico donde se almacenarán todos los datos, tablas, vistas, índices y procedimientos almacenados
-CREATE DATABASE Modulo3_unidad2_diseno;
+CREATE DATABASE modulo2_unidad1_diseno;
 
 -- Clausula USE: nos permite usar la base de datos recien creada
-USE Modulo3_unidad2_diseno;
+USE modulo2_unidad1_diseno;
 
 -- CREAR TABLA CLIENTES
 -- En id_cliente utilicé INT porque necesito que un número entero represente un código único para cada cliente; NOT NULL para que la columna siempre tenga
