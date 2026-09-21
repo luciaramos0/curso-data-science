@@ -13,7 +13,7 @@ USE Modulo3_unidad2_diseno;
 -- En fecha_registro se utilizó DATE para que efectivamente la fecha se guarde como fecha y no como texto.
 CREATE TABLE Clientes(
 id_cliente INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
-nombre VARCHAR(50) NOT NULL,
+nombre VARCHAR(100) NOT NULL,
 perfil_bio TEXT NOT NULL, 
 fecha_registro DATE NOT NULL
 );
@@ -22,10 +22,10 @@ fecha_registro DATE NOT NULL
 -- En id_productos ocurre lo mismo que en id_clientes de la tabla clientes.
 -- En descripción utilicé TEXT ya que podría ser un bloque de texto largo.
 -- En precio utlicé DECIMAL(10,2) ya que necesito un valor exacto que no pierda precisión.
--- En esta_activo me parecio que lo mejor era usar una sola letra para identificar si esta activo (A) o inactivo (I), ya que es algo claro para cualquier
+-- En esta_activo me parecio que lo mejor era usar un nímer para identificar si esta activo (1) o inactivo (2), ya que es algo claro para cualquier
 -- persona que consulte la base de datos.
 CREATE TABLE Productos(
 id_producto INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
-descripción TEXT NOT NULL,
+descripcion VARCHAR(255) NOT NULL,
 precio DECIMAL(10,2) NOT NULL,
-esta_activo VARCHAR(1) NOT NULL);
+esta_activo BIT(1) NOT NULL);
